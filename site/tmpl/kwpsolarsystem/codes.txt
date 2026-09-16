@@ -1,0 +1,67 @@
+	
+			//$uranus = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+			/*	$uranusangle = 0;
+		for($i=0; $i<6; $i++)
+		{
+			if($uranusangle< M_PI/2)
+			$uranus[$j]= $solarpositionx - $x[8][$j];
+		    else
+				$uranus[$j] = $x[8][$j] - $solarpositionx;
+			switch($j)
+			{
+				case 0:
+				  // $uranus[11] = $uranus[$j];
+				   $uranus[10] = $uranus[$j];
+				break;
+				case 1:
+				   	$uranus[9] = $uranus[$j] + 2 * $x[8][$j];
+				break;
+				case 2:
+				   	$uranus[8] = $uranus[$j] + 2 * $x[8][$j];
+				break;
+				case 3:
+				   	$uranus[7] = $uranus[$j] + 2 * $x[8][$j];
+				break;
+				case 4:
+				    $uranus[6] = $uranus[$j] + 2 * $x[8][$j];
+				break;
+			
+			}
+			$uranusangle += M_PI/5;
+		}
+		*/
+
+	
+	$uranusvar = "
+			
+			@property --hamp
+                {
+	               syntax: '<length>';
+	               inherits: true;
+	               initial-value:93px;
+                }
+			
+			@keyframes uranus 
+			{
+				  0%  {  --hamp:".$uranus[0]."px;  }
+				    10%  { --hamp:".$uranus[1]."px;   }
+					20%  {  --hamp:".$uranus[2]."px;   }
+				    30%  {  --hamp:".$uranus[3]."px;   }
+					 40%  {  --hamp:".$uranus[4]."px;  }
+				    50%  {  --hamp:".$uranus[5]."px;   }
+					60%  {  --hamp:".$uranus[6]."px;   }
+				    70%  {  --hamp:".$uranus[7]."px;   }
+					 80%  {  --hamp:".$uranus[8]."px;   }
+				    90%  {   --hamp:".$uranus[9]."px;  }
+					100%  {   --hamp:".$uranus[10]."px;   }  
+			}
+			
+			.moon8
+			{
+							   translate:0 var(--hamp) 0 ;
+							   		      animation:uranus ".$T[7]."s linear infinite;
+
+
+			}
+			
+			";

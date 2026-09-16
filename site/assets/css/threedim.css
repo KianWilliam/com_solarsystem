@@ -1,0 +1,58 @@
+body {
+ /* background: #25232d;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  color: white;*/
+}
+div
+{
+	
+}
+/*
+.canvas-container {
+  margin: auto;
+  animation: rotate 8s infinite ease-in-out alternate;
+  position: relative;
+  transform-style: preserve-3d;
+}
+*/
+
+.clone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateZ(10px);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(-70deg) rotateZ(-20deg);
+  }
+  45% {
+    transform: rotateY(0deg) rotateZ(0deg);
+  }
+  55% {
+    transform: rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateY(70deg) rotateZ(25deg);
+  }
+}
+
+/*
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  45% {
+    transform: rotateY(-100deg) rotateX(0deg);
+  }
+  55% {
+    transform: rotateY(-200deg) rotateX(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg) rotateX(0deg);
+  }
+}*/
