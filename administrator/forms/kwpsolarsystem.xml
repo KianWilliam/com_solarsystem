@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+ <field name="title"
+               type="text"
+               label="JGLOBAL_TITLE"
+               description="COM_KWPSOLARSYSTEM_TITLE_DESC"
+               class="inputbox"
+               size="30"
+               required="true"
+        />
+		<field name="alias"
+               type="text"
+               label="JFIELD_ALIAS_LABEL"
+               description="JFIELD_ALIAS_DESC"
+               class="inputbox"
+               size="30"
+        />
+       <field name="id" type="text" default="0" label="COM_KWPSOLARSYSTEM_FORM_LBL_KWPSOLARSYSTEM_ID"
+            readonly="true" class="readonly"
+            description="JGLOBAL_FIELD_ID_DESC" /> 
+			
+			
+	   <field
+			name="created_by"
+			type="createdby"
+			label="COM_KWPSOLARSYSTEM_KWPSOLARSYSTEM_CREATED_BY_LBL"
+			hint="COM_KWPSOLARSYSTEM_KWPSOLARSYSTEM_CREATED_BY_DESC"
+			default=""
+			/>
+	
+
+	 
+		<field
+			name="state"
+			type="list"
+			label="COM_KWPSOLARSYSTEM_KWPSOLARSYSTEM_STATE_LBL"
+			hint="COM_KWPSOLARSYSTEM_KWPSOLARSYSTEM_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="1"
+			>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+	
+		<field
+			name="ordering"
+			type="hidden"
+			label="COM_KWPSOLARSYSTEM_KWPSOLARSYSTEM_ORDERING_LBL"
+			hint="COM_KWPSOLARSYSTEM_KWPSOLARSYSTEM_ORDERING_DESC"
+			default="0"
+			/>
+			
+				<field name="checked_out"
+			type="hidden"
+			filter="unset"
+		/>
+
+		<field name="checked_out_time"
+			type="hidden"
+			filter="unset"
+		/>
+ <fields name="params">
+
+	<fieldset name="display" addfieldprefix="Joomla\Component\Kwpsolarsystem\Administrator\Field">
+
+			<fieldset name="basic" addfieldprefix="Joomla\Component\Kwpsolarsystem\Administrator\Field">
+
+			<field name="lib" type="list" label="COM_KWPSOLARSYSTEM_LIB_LABEL" description="COM_KWPSOLARSYSTEM_LIB_DESC">
+			       <option value="0">No</option>
+			       <option value="1">Yes</option>
+	            </field>
+					
+			<field
+					name="slides"
+					type="Kwpslidesmanager"
+					label="KWPSOLARSYSTEM_SLIDES_LABEL"
+					default="[{|qq|imgname|qq|:|qq|media/com_Kwpsolarsystem/images/2.jpg|qq|,|qq|imgcaption|qq|:|qq|Wife for Arminio|qq|,|qq|imgtitle|qq|:|qq|Wife for Arminio|qq|,|qq|imgthumb|qq|:|qq|../media/com_Kwpsolarsystem/images/2.jpg|qq|,|qq|imglink|qq|:|qq||qq|,|qq|imgtarget|qq|:|qq|default|qq|,|qq|imgalignment|qq|:|qq|default|qq|,|qq|imgvideo|qq|:|qq||qq|,|qq|slidearticleid|qq|:|qq||qq|,|qq|slidearticlename|qq|:|qq||qq|,|qq|imgtime|qq|:|qq||qq|},{|qq|imgname|qq|:|qq|media/com_Kwpsolarsystem/images/3.jpg|qq|,|qq|imgcaption|qq|:|qq|The Warrior Queen Vs. rome|qq|,|qq|imgtitle|qq|:|qq|The Warrior Queen Vs. rome|qq|,|qq|imgthumb|qq|:|qq|../media/com_Kwpsolarsystem/images/3.jpg|qq|,|qq|imglink|qq|:|qq||qq|,|qq|imgtarget|qq|:|qq|default|qq|,|qq|imgalignment|qq|:|qq|default|qq|,|qq|imgvideo|qq|:|qq||qq|,|qq|slidearticleid|qq|:|qq||qq|,|qq|slidearticlename|qq|:|qq||qq|,|qq|imgtime|qq|:|qq||qq|},{|qq|imgname|qq|:|qq|media/com_Kwpsolarsystem/images/4.png|qq|,|qq|imgcaption|qq|:|qq||qq|,|qq|imgtitle|qq|:|qq||qq|,|qq|imgthumb|qq|:|qq|../media/com_Kwpsolarsystem/images/4.png|qq|,|qq|imglink|qq|:|qq||qq|,|qq|imgtarget|qq|:|qq|default|qq|,|qq|imgalignment|qq|:|qq|default|qq|,|qq|imgvideo|qq|:|qq||qq|,|qq|slidearticleid|qq|:|qq||qq|,|qq|slidearticlename|qq|:|qq||qq|,|qq|imgtime|qq|:|qq||qq|}]"
+					filter="raw"
+					showon="source:kwpslidesmanager" />
+				<field name="solar_left" 
+                   type="number" 
+                   label="Left"
+                   default="50"
+                   description="COM_KWPSOLARSYSTEM_FIELD_WIDTH_DESC" />
+            
+			<field name="solar_top" 
+                   type="number" 
+                   label="Top"
+                   default="0"
+                   description="COM_KWPSOLARSYSTEM_FIELD_WIDTH_DESC" />
+            
+				<field name="solar_width" 
+                   type="number" 
+                   label="COM_KWPSOLARSYSTEM_WIDTH_LABEL"
+                   default="200"
+                   description="COM_KWPSOLARSYSTEM_WIDTH_DESC" />
+                
+			    <field name="solar_height" 
+                   type="number" 
+                   label="COM_KWPSOLARSYSTEM_HEIGHT_LABEL"
+                   default="200"
+                   description="COM_KWPSOLARSYSTEM_HEIGHT_DESC" />
+                
+				
+				
+                
+						
+				<field name="solarbackgroundcolor" 
+                   type="color" 
+                   label="COM_KWPSOLARSYSTEM_CUBE_BACKGROUND_COLOR_LABEL"
+                   default="#000000"
+                   description="COM_KWPSOLARSYSTEM_CUBE_BACKGROUND_COLOR_DESC" />
+                
+			
+                
+	</fieldset>
+		</fieldset>
+
+	
+				</fields>
+
+</form>

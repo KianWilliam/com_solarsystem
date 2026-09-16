@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="permissions"
+			  label="JCONFIG_PERMISSIONS_LABEL"
+			  description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules"
+			   type="rules"
+			   label="JCONFIG_PERMISSIONS_LABEL"
+			   class="inputbox"
+			   validate="rules"
+			   filter="rules"
+			   component="com_kwpsolarsystem"
+			   section="component" />
+	</fieldset>
+	
+ <fields name="params">
+
+	<fieldset name="params" >
+
+		
+			<field name="lib" type="list" label="COM_KWPSOLARSYSTEM_LIB_LABEL" description="COM_KWPSOLARSYSTEM_LIB_DESC">
+			       <option value="0">No</option>
+			       <option value="1">Yes</option>
+	            </field>		
+				
+						
+				<field name="Solarbackgroundcolor" 
+                   type="color" 
+                   label="COM_KWPSOLARSYSTEM_BACKGROUND_COLOR_LABEL"
+                   default="#000000"
+                   description="COM_KWPSOLARSYSTEM_BACKGROUND_COLOR_DESC" />
+                
+				
+                
+	</fieldset>
+	
+				</fields>
+</config>

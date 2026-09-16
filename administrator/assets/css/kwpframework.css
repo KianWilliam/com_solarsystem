@@ -1,0 +1,1000 @@
+
+
+.kwpclr {
+	clear : both;
+}
+
+/* ===========================================================
+ * CK Button
+ * ========================================================== */
+
+.kwpbutton {
+	display: inline-block;
+	background: #f9f9f9;
+	border: #bbb 1px solid;
+	border-color: #bbb #bbb #a2a2a2;
+	border-radius: 2px;
+	color: #333;
+	font-size: 13px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 18px;
+	margin: 0px 5px 3px 5px;
+	vertical-align: top;
+	padding: 4px 12px;
+	text-decoration: none;
+}
+
+.kwpbutton:hover {
+	background: #f1f1f1;
+	text-decoration: none;
+	color: #333;
+}
+
+/*.kwpbutton:empty {
+	display: none !important;
+}
+*/
+.kwpbutton [class^="icon-"], .kwpbutton [class*=" icon-"] {
+	margin: 0;
+}
+
+.kwpbutton-small {
+	padding: 2px 4px;
+}
+
+.kwpbutton:active,
+.kwpinterface :checked + label.kwpbutton,
+.kwpbutton.active {
+	color: #333;
+	background: #e6e6e6;
+	outline: 0;
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
+}
+
+.kwpbutton-group {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.kwpbutton-group {
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+.kwpbutton-group > .kwpbutton {
+	margin-left: 2px;
+	margin-right: 0px;
+	border-radius: 0;
+	/*min-width: 30px;*/
+}
+
+.kwpbutton-group.small > .kwpbutton {
+	padding: 4px 8px;
+}
+
+.kwpbutton-group > label.kwpbutton {
+	width: auto;
+}
+
+.kwpbutton-group > input[type="radio"] {
+	display: none !important;
+}
+
+.kwpbutton-group > .kwpbutton + .kwpbutton,
+.kwpbutton-group > input:not(:first-child) + .kwpbutton {
+	margin-left: -1px;
+}
+
+.kwpbutton-primary.active,
+.kwpbutton-warning.active,
+.kwpbutton-danger.active,
+.kwpbutton-success.active,
+.kwpbutton-info.active,
+.kwpbutton-inverse.active {
+	color: rgba(255,255,255,0.75);
+}
+.kwpbutton-primary {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #1d6cb0;
+	border-color: #15497c #15497c #0a223b;
+}
+.kwpbutton-primary:hover,
+.kwpbutton-primary:focus,
+.kwpbutton-primary:active,
+.kwpbutton-primary.active,
+.kwpbutton-primary.disabled,
+.kwpbutton-primary[disabled] {
+	color: #fff;
+	background-color: #15497c;
+}
+
+.kwpbutton-warning {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #faa732;
+	border-color: #f89406 #f89406 #ad6704;
+}
+
+.kwpbutton-warning:hover,
+.kwpbutton-warning:focus,
+.kwpbutton-warning:active,
+.kwpbutton-warning.active,
+.kwpbutton-warning.disabled,
+.kwpbutton-warning[disabled] {
+	color: #fff;
+	background-color: #f89406;
+}
+
+.kwpbutton-danger {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #da4f49;
+	border-color: #bd362f #bd362f #802420;
+}
+
+.kwpbutton-danger:hover,
+.kwpbutton-danger:focus,
+.kwpbutton-danger:active,
+.kwpbutton-danger.active,
+.kwpbutton-danger.disabled,
+.kwpbutton-danger[disabled] {
+	color: #fff;
+	background-color: #bd362f;
+}
+
+.kwpbutton-success {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #5bb75b;
+	border-color: #51a351 #51a351 #387038;
+}
+.kwpbutton-success:hover,
+.kwpbutton-success:focus,
+.kwpbutton-success:active,
+.kwpbutton-success.active,
+.kwpbutton-success.disabled,
+.kwpbutton-success[disabled] {
+	color: #fff;
+	background-color: #51a351;
+}
+.kwpbutton-success:active,
+.kwpbutton-success.active {
+	background-color: #408140 \9;
+}
+.kwpbutton-info {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #49afcd;
+	border-color: #2f96b4 #2f96b4 #1f6377;
+}
+.kwpbutton-info:hover,
+.kwpbutton-info:focus,
+.kwpbutton-info:active,
+.kwpbutton-info.active,
+.kwpbutton-info.disabled,
+.kwpbutton-info[disabled] {
+	color: #fff;
+	background-color: #2f96b4;
+}
+
+.kwpbutton-inverse {
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #363636;
+	border-color: #222 #222 #000000;
+}
+.kwpbutton-inverse:hover,
+.kwpbutton-inverse:focus,
+.kwpbutton-inverse:active,
+.kwpbutton-inverse.active,
+.kwpbutton-inverse.disabled,
+.kwpbutton-inverse[disabled] {
+	color: #fff;
+	background-color: #222;
+}
+
+
+/* ===========================================================
+ * CK Forms
+ * ========================================================== */
+
+.kwpinterface {
+	font-family: Segoe UI, "Helvetica Neue",Helvetica,Arial,sans-serif;
+	background: #fff;
+	line-height: 22px;
+	font-size: 13px;
+}
+
+.kwpinterface label {
+	width: 150px;
+}
+
+.kwpinterface textarea,
+.kwpinterface select,
+.kwpinterface input[type="text"], 
+.kwpinterface input[type="password"], 
+.kwpinterface input[type="datetime"], 
+.kwpinterface input[type="datetime-local"], 
+.kwpinterface input[type="date"], 
+.kwpinterface input[type="month"], 
+.kwpinterface input[type="time"], 
+.kwpinterface input[type="week"], 
+.kwpinterface input[type="number"], 
+.kwpinterface input[type="email"], 
+.kwpinterface input[type="url"], 
+.kwpinterface input[type="search"], 
+.kwpinterface input[type="tel"], 
+.kwpinterface input[type="color"], 
+.kwpinterface .uneditable-input {
+	border-radius: 0;
+	margin: 0px 0px 3px 0px;
+	padding: 4px 6px;
+	/*vertical-align: middle;*/
+	display: inline-block;
+	font-size: 13px;
+	min-height: 28px;
+	line-height: 18px;
+	vertical-align: top;
+	color: #555;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	background-color: #ffffff;
+	border: 1px solid #cccccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	   -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+		 -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+			transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+/*textarea,select {
+	height: auto;
+	border-radius: 0;
+}*/
+
+.kwpinterface textarea:focus, .kwpinterface  input[type="text"]:focus, .kwpinterface  input[type="password"]:focus, .kwpinterface  input[type="datetime"]:focus, .kwpinterface  input[type="datetime-local"]:focus, .kwpinterface  input[type="date"]:focus, .kwpinterface  input[type="month"]:focus, .kwpinterface  input[type="time"]:focus, .kwpinterface  input[type="week"]:focus, .kwpinterface  input[type="number"]:focus, .kwpinterface  input[type="email"]:focus, .kwpinterface  input[type="url"]:focus, .kwpinterface  input[type="search"]:focus, .kwpinterface  input[type="tel"]:focus, .kwpinterface  input[type="color"]:focus, .kwpinterface  .uneditable-input:focus {
+	border-color: rgba(82, 168, 236, 0.8);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* ===========================================================
+ * CK Tooltip
+ * ========================================================== */
+
+.kwptooltip {
+	position: absolute;
+	z-index: 10030;
+	display: block;
+	visibility: visible;
+	font-size: 11px;
+	line-height: 1.4;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.kwptooltip.in {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.kwptooltip.top {
+	margin-top: -3px;
+	padding: 5px 0;
+}
+.kwptooltip.right {
+	margin-left: 3px;
+	padding: 0 5px;
+}
+.kwptooltip.bottom {
+	margin-top: 3px;
+	padding: 5px 0;
+}
+.kwptooltip.left {
+	margin-left: -3px;
+	padding: 0 5px;
+}
+.kwptooltip-inner {
+	max-width: 200px;
+	padding: 8px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	background-color: #000;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.kwptooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid;
+}
+.kwptooltip.top .kwptooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px 5px 0;
+	border-top-color: #000;
+}
+.kwptooltip.right .kwptooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -5px;
+	border-width: 5px 5px 5px 0;
+	border-right-color: #000;
+}
+.kwptooltip.left .kwptooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -5px;
+	border-width: 5px 0 5px 5px;
+	border-left-color: #000;
+}
+.kwptooltip.bottom .kwptooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 0 5px 5px;
+	border-bottom-color: #000;
+}
+
+/* ===========================================================
+ * CK General settings
+ * ========================================================== */
+ 
+.kwprow {
+	margin-top: 0;
+	margin-bottom: 5px;	
+}
+
+.kwpinterface .kwpicon {
+	vertical-align: -3px;
+}
+
+/* ===========================================================
+ * Table
+ * ========================================================== */
+
+.kwptable {
+	width: 100%;
+	margin-bottom: 18px;
+	max-width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.kwptable th,
+.kwptable td {
+	padding: 8px;
+	line-height: 18px;
+	text-align: left;
+	vertical-align: top;
+	/*border-top: 1px solid #ddd;*/
+}
+.kwptable th {
+	font-weight: bold;
+}
+.kwptable thead th {
+	vertical-align: bottom;
+}
+.kwptable caption + thead tr:first-child th,
+.kwptable caption + thead tr:first-child td,
+.kwptable colgroup + thead tr:first-child th,
+.kwptable colgroup + thead tr:first-child td,
+.kwptable thead:first-child tr:first-child th,
+.kwptable thead:first-child tr:first-child td {
+	border-top: 0;
+}
+.kwptable tbody + tbody {
+	border-top: 2px solid #ddd;
+}
+.kwptable .kwptable {
+	/*bakwpground-color: #fff;*/
+}
+.kwptable-condensed th,
+.kwptable-condensed td {
+	padding: 4px 5px;
+}
+.kwptable-bordered {
+	border: 1px solid #ddd;
+	border-collapse: separate;
+	/*border-collapse: collapse;*/
+	border-left: 0;
+	/*-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;*/
+}
+.kwptable-bordered th,
+.kwptable-bordered td {
+	border-left: 1px solid #ddd;
+}
+.kwptable-bordered caption + thead tr:first-child th,
+.kwptable-bordered caption + tbody tr:first-child th,
+.kwptable-bordered caption + tbody tr:first-child td,
+.kwptable-bordered colgroup + thead tr:first-child th,
+.kwptable-bordered colgroup + tbody tr:first-child th,
+.kwptable-bordered colgroup + tbody tr:first-child td,
+.kwptable-bordered thead:first-child tr:first-child th,
+.kwptable-bordered tbody:first-child tr:first-child th,
+.kwptable-bordered tbody:first-child tr:first-child td {
+	border-top: 0;
+}
+.kwptable-striped tbody > tr:nth-child(odd) > td,
+.kwptable-striped tbody > tr:nth-child(odd) > th {
+	background-color: #f9f9f9;
+}
+.kwptable-hover tbody tr:hover > td,
+.kwptable-hover tbody tr:hover > th {
+	background-color: #f5f5f5;
+}
+
+/* ===========================================================
+ * Messages
+ * ========================================================== */
+
+[class^="kwpalert"] {
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 18px;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.kwpalert {
+	background-color: #fcf8e3;
+	border: 1px solid #faebcc;
+}
+.kwpalert,
+.kwpalert h4 {
+	color: #8a6d3b;
+}
+.kwpalert h4 {
+	margin: 0 0 .5em;
+}
+.kwpalert .kwpclose {
+	position: relative;
+	top: -2px;
+	right: -21px;
+	line-height: 18px;
+	float: right;
+	font-size: 20px;
+	line-height: 20px;
+	padding: 5px;
+	cursor: pointer;
+}
+.kwpalert-success {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #3c763d;
+}
+.kwpalert-success h4 {
+	color: #3c763d;
+}
+.kwpalert-danger,
+.kwpalert-error {
+	background-color: #f2dede;
+	border-color: #ebccd1;
+	color: #a94442;
+}
+.kwpalert-danger h4,
+.kwpalert-error h4 {
+	color: #a94442;
+}
+.kwpalert-info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #31708f;
+}
+.kwpalert-info h4 {
+	color: #31708f;
+}
+
+
+/* ===========================================================
+ * Interface with tabs
+ * ========================================================== */
+
+.kwpinterfacetab {
+	/*min-height: 500px;
+	overflow-y: auto;*/
+	position: relative;
+	/*padding: 10px;*/
+}
+
+.kwpinterfacetab:not(.current) {
+	display: none;
+}
+
+.kwpinterfacetablink {
+	float: left;
+	padding: 7px 14px;
+	margin: 5px 3px 0 5px;
+	cursor: pointer;
+	color: #a6a6a6;
+	background: #eee;
+	border-radius: 2px 2px 0 0;
+	border: 1px solid #ddd;
+	position: relative;
+	z-index: 1;
+}
+
+.kwpinterfacetablinkdesc {
+	text-align: center;
+	font-size: 10px;
+	color: #a6a6a6;
+	line-height: 10px;
+}
+
+.kwpinterfacetablink:hover, .kwpinterfacetablink.current {
+	color: #000;
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.kwpinterfacetablink + .kwpclr {
+	clear: both;
+	border-top: 1px solid #ddd;
+	margin-bottom: 5px;
+	position: relative;
+	z-index: 0;
+	top: -1px;
+	visibility: visible;
+}
+
+.kwpinterfacetab input[type="radio"], input[type="checkbox"] {
+	border: none;
+}
+
+.kwpinterfacetab .kwpinterfacetablink {
+	cursor: pointer;
+	position: relative;
+	z-index: 1;
+	/*height: 20px;*/
+	margin: 5px 0 3px 3px;
+	padding: 15px;
+	color: #a6a6a6;
+	background: #eee;
+	border-radius: 5px 0 0 5px;
+	border: 1px solid #ddd;
+	float: none;
+}
+
+.kwpinterfacetab .kwpinterfacetablink:hover, .kwpinterfacetab .kwpinterfacetablink.current {
+	background: #fff;
+	border-right: 1px solid #fff;
+	color: #21759b;
+}
+
+.kwpinterfacetab .kwpinterfacetab {
+	padding: 0 0 0 10px;
+}
+
+.kwpinterfacetab.hascol:after {
+	border-right: 1px solid #ddd;
+	content: "";
+	display: block;
+	float: left;
+	height: 100%;
+	left: 169px;
+	margin: 0;
+	position: absolute;
+	top: 0;
+	width: 0;
+}
+
+.kwpcol_left {
+	float: left;
+	width: 170px;
+	height: 250px;
+}
+
+.kwpcol_right {
+	float: left;
+	width: 610px;
+}
+
+.kwpdisabled {
+	cursor: default;
+	background-image: none;
+	opacity: 0.65;
+	filter: alpha(opacity=65);
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* ===========================================================
+ * Options field
+ * ========================================================== */
+ 
+.kwpoption {
+	margin-bottom: 3px;
+	padding: 2px 5px;
+	clear: both;
+}
+
+.kwpoption > span {
+	display: inline-blokwp;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 0 3px;
+}
+
+.kwpoption > span:first-child {
+	width: 170px;
+}
+
+.kwpoption .kwpoption-desc {
+	font-style: italic;
+	display: inline;
+}
+
+.kwpoption-label, .kwpoption > span.kwpoption-label:first-child {
+	width: 115px;
+	float: left;
+	margin-top: 5px;
+}
+
+.kwpinterface-labels-big .kwpoption-label, .kwpinterface-labels-big .kwpoption > span.kwpoption-label:first-child {
+	width: 200px;
+	line-height: 16px;
+	float: none;
+	display: inline-blokwp;
+}
+.kwpoption-field {
+	width: calc(100% - 115px);
+}
+
+#kwpelementscontainer .kwpoption-field  > input[type="text"], .kwpoption-field  > input[type="text"],
+.kwpelementscontainer .kwpoption-field  > input[type="text"], .kwpoption-field  > input[type="text"]{
+	width: auto;
+}
+
+
+.kwpoption-suffix {
+	display: inline-blokwp;
+	margin-top: 4px;
+}
+
+img.kwpoption-icon {
+	float: right;
+}
+
+/*--------------------------------------------
+--- 			Page header menu 			--
+----------------------------------------------*/
+
+#kwpheader *:not([class*="fa-"]) {
+	box-sizing: border-box;
+	font-family: Open Sans, Verdana, Arial, Sans Serif;
+}
+
+#kwpheader {
+	background: #333;
+	height: 65px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	min-width: 800px;
+}
+
+#kwpheader .kwpheaderlogo {
+	float: left;
+	padding: 15px 15px;
+	margin: 0 10px 0 0;
+	background: #222;
+	border-right: 1px solid #000;
+	height: 65px;
+	overflow: hidden;
+}
+
+#kwpheader .kwpheaderlogo a:before{
+	display: none;
+}
+#kwpheader .kwpheadertitle {
+	float: left;
+	margin: 20px 5px;
+	font-size: 14px;
+	color: #777777;
+}
+
+#kwpheader .kwpheadermenu {
+	text-align: left;
+	min-width: 800px;
+}
+
+#kwpheader .kwpheadermenu .kwpheadermenuitem {
+	display: inline-blokwp;
+	color: #d1d1c6;
+	border: 1px solid transparent;
+	padding: 8px 12px;
+	margin: 12px 5px;
+	font-size: 13px;
+	text-align: center;
+	background: none;
+	border-radius: 3px;
+	font-weight: bold;
+	text-decoration: none;
+	transition: all 0.1s ease;
+}
+
+#kwpheader .kwpheadermenu .kwpheadermenuitem:not(.kwpsave):not(.kwpcancel):hover {
+	background: #000;
+	color: #fff;
+	border: 1px solid rgba(255,255,255, 0.4);
+}
+
+#kwpheader .kwpheadermenu .kwpheadermenuitem:hover {
+	border: 1px solid rgba(255,255,255, 0.4);
+}
+
+#kwpheader .kwpheadermenu .kwpsave {
+	background: #007feb;
+	color: #fff;
+	text-transform: uppercase;
+	float: right;
+}
+
+#kwpheader .kwpheadermenu .kwpcancel {
+	background: #000;
+	color: #fff;
+	text-transform: uppercase;
+	float: right;
+	margin-right: 10px;
+}
+
+.kwpheadermenuitem:not(.kwpundo):not(.kwpredo):not(.kwpcancel):not(.kwpsave) .fa {
+	display: none;
+}
+
+@media screen and (max-width: 1300px) {
+	#kwpheader .kwpheadermenu .kwpheadermenuitem {
+		padding: 8px 8px;
+		margin: 12px 2px;
+	}
+}
+
+@media screen and (max-width: 1155px) {
+	.kwpheadermenuitem .fa,
+	.kwpheadermenuitem .fas {
+		display: blokwp !important;
+		font-size: 30px;
+	}
+	.kwpheadermenuitemtext {
+		display: none;
+	}
+	#kwpheader .kwpheadermenu .kwpheadermenuitem {
+		min-width: 50px;
+		min-height: 50px;
+		margin: 8px 2px;
+	}
+	#kwpheader .kwpheadermenu .kwpheadertitle {
+		font-size: 12px;
+	}
+}
+
+#kwpheader .kwphassubmenu {
+	display: inline-blokwp;
+}
+
+#kwpheader .kwpsubmenu > a {
+	display: block;
+	color: #d1d1c6;
+	border: none;
+	padding: 8px 12px;
+	margin: 5px 10px;
+	font-size: 14px;
+	text-align: left;
+	background: none;
+	border-radius: 0px;
+	font-weight: normal;
+	text-decoration: none;
+	transition: all 0.1s ease;
+}
+
+#kwpheader .kwpsubmenu > a:hover {
+	color: #fff;
+	background: #000;
+}
+
+#kwpbody {
+	margin-top: 65px;
+}
+/*--------------------------------------------
+--- 	Left panel							--
+----------------------------------------------*/
+
+.kwpleftpanel {
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	display: blokwp;
+	left: 0;
+	padding: 0 0 10px 0px;
+	width: 310px;
+	box-sizing: border-box;
+	z-index: 999;
+	position: fixed;
+	top: 66px;
+	bottom: 0;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: Segoe UI, arial;
+}
+
+.kwpleftpanel > .inner {
+	padding: 0 20px 0 2px;
+}
+
+.kwpleftpanelheader {
+	cursor: pointer;
+	padding: 0 0 0 5px;
+	background: #ececec;
+	border-bottom: 1px solid #ddd;
+	font-size: 18px;
+	min-height: 40px;
+}
+
+.kwpleftpaneltitle {
+	display: inline-block;
+	width: 120px;
+	line-height: 32px;
+	vertical-align: top;
+	padding-left: 5px;
+	height: 40px;
+}
+
+.kwpleftpanelsubtitle {
+	margin: 5px 0;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 12px;
+}
+
+.kwpleftpanelsubtitleunder {
+	display: block;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+
+.kwpleftpanelheadericon {
+	width: 40px;
+	height: 40px;
+	float: right;
+	display: inline-block;
+	box-sizing: border-box;
+	line-height: 35px;
+	padding: 0;
+	background: #cfcfcf;
+	color: #555;
+	font-size: 13px;
+	border: none;
+	border-left: 1px solid #aaa;
+	box-shadow: 0 0 15px #b5b5b5 inset;
+	text-align: center;
+	cursor: pointer;
+	font-weight: normal;
+	border-radius: 0;
+}
+
+.kwpleftpanelheadericon.kwpclose {
+	font-size: 1.3em;
+	line-height: 32px;
+}
+
+.kwpsticked .kwpleftpanelheadericon.kwpstick .fa {
+	transform: rotate(45 deg);
+	color: cornflowerblue;
+}
+
+
+/*--------------------------------------------
+--- 	Label and Badge						--
+----------------------------------------------*/
+
+.kwplabel,
+.kwpbadge {
+	display: inline-block;
+	padding: 2px 4px;
+	font-size: 10.998px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #fff;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	background-color: #999;
+}
+.kwplabel {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+.kwpbadge {
+	padding-left: 9px;
+	padding-right: 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+}
+.kwplabel:empty,
+.kwpbadge:empty {
+	display: none;
+}
+a.kwplabel:hover,
+a.kwplabel:focus,
+a.kwpbadge:hover,
+a.kwpbadge:focus {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+}
+.kwplabel-important,
+.kwpbadge-important {
+	background-color: #b94a48;
+}
+.kwplabel-important[href],
+.kwpbadge-important[href] {
+	background-color: #953b39;
+}
+.kwplabel-warning,
+.kwpbadge-warning {
+	background-color: #f89406;
+}
+.kwplabel-warning[href],
+.kwpbadge-warning[href] {
+	background-color: #c67605;
+}
+.kwplabel-success,
+.kwpbadge-success {
+	background-color: #468847;
+}
+.kwplabel-success[href],
+.kwpbadge-success[href] {
+	background-color: #356635;
+}
+.kwplabel-info,
+.kwpbadge-info {
+	background-color: #3a87ad;
+}
+.kwplabel-info[href],
+.kwpbadge-info[href] {
+	background-color: #2d6987;
+}
+.kwplabel-inverse,
+.kwpbadge-inverse {
+	background-color: #333;
+}
+.kwplabel-inverse[href],
+.kwpbadge-inverse[href] {
+	background-color: #1a1a1a;
+}
+
+#kwptoolbar-fixed {
+	position: absolute;
+	margin: 0;
+	top: 65px;
+	left: 0;
+	background: #f0f0f0;
+	border-bottom: 1px solid #dedede;
+	right: 0;
+	padding: 0 10px;
+}

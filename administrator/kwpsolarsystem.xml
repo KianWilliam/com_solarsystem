@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade">
+    <name>com_kwpsolarsystem</name>
+    <creationDate>2026-05-05</creationDate>
+    <copyright>Copyright (C) 2028. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <author>KWProductions Co.</author>
+    <authorEmail>webarchitect@kwproductions121.ir</authorEmail>
+    <authorUrl>https://kwproductions121.ir</authorUrl>
+    <version>1.0.0</version>
+    <description>Dynamic Model of Solar system</description>
+    <namespace path="src">Joomla\Component\Kwpsolarsystem</namespace>
+
+    <!-- Runs on install -->
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    
+    <!-- Runs on uninstall -->
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+<updateservers>
+		<server type="collection" name="com_kwpsolarsystem"><![CDATA[https://www.extensions.kwproductions121.ir/myextensions.xml]]></server>
+</updateservers>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+	<media folder="media" destination="com_kwpsolarsystem">
+		
+		<folder>images</folder>
+		
+	</media>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_kwpsolarsystem.ini</language>
+	    <language tag="en-GB">language/en-GB/en-GB.com_kwpsolarsystem.sys.ini</language>
+
+    </languages>
+    <administration>
+        <menu>COM_kwpsolarsystem</menu>
+        <submenu>
+            <menu link="option=com_kwpsolarsystem&amp;view=kwpsolarsystems" view="kwpsolarsystems" img="components/com_kwpsolarsystem/assets/images/logo.png" alt="kwpsolarsystem/kwpsolarsystems">Kwpsolarsystem</menu>
+        </submenu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <folder>assets</folder>
+            <folder>tmpl</folder>
+            <folder>forms</folder>
+            <folder>services</folder>
+            <folder>sql</folder>
+            <folder>src</folder>
+        </files>
+        <languages folder="administrator">
+            <language tag="en-GB">language/en-GB/en-GB.com_kwpsolarsystem.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_kwpsolarsystem.sys.ini</language>
+        </languages>
+    </administration>
+    <!-- Generated with the ComponentGenerator.com -->
+</extension>
